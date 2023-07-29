@@ -3,7 +3,7 @@
 INSCRIBITE A LAS PRUEBAS DE BASQUET
 {% endblock titulo %}
 {% block contenido %}
-<a class="navbar-brand" href="{% url 'Buscarjugadores' %}">Buscar basquetbolistas</a>
+<a class="bottom" href="{% url 'Buscarjugadores' %}">Buscar basquetbolistas</a>
 <form method="post">
  {% csrf_token %}
  {{ formulario.as_p }}
