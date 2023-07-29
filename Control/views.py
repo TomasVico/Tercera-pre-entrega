@@ -124,7 +124,11 @@ def buscar_jugadores(request):
         busqueda = data["busqueda"]
         # Filtro simple
         nombre = Basquet.objects.filter(nombre__contains=busqueda)
-   
+        return render(
+            context={"jugadores":nombre},
+            request=request,
+            template_name='control/lista_basquet.html'
+        )
    
         # Ejemplo filtro avanzado
         # basquet = Curso.objects.filter(

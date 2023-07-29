@@ -11,7 +11,7 @@ urlpatterns = [
     path('Basquet',views.InscribirseBasquet, name="Basquet"),
     path('Rugby',views.InscribirseRugby, name="Rugby"),
     path('Futbol',views.InscribirseFutbol, name="Futbol"),
-    path('Jugadores',views.listar_jugadores, name="Jugadores"),
+    path('Jugadores',views.buscar_jugadores, name="Jugadores"),
     path('Buscarjugadores',views.buscar_jugadores, name="Buscarjugadores")
 
 ]
